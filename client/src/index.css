@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*    ==========
+===== FORM  
+============   */
+
+.form-banner img{
+  height: 100%;
+  width: 100%;
+}
+
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
+/*==============
+===== loader */
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.loader {
+  width: 50px;  /* Set a fixed width */
+  height: 50px; /* Set a fixed height */
+  border: 5px solid #fff;
+  border-top-color: transparent; /* Creates a rotating effect */
+  border-radius: 50%;
+  border-bottom-color: #ff3d00;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite; /* Fixed animation syntax */
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*===================
+======== navbar
+=================*/
+
+.navbar {
+  background-color: black !important;
+  color: white !important;
+}
+
+.nav-link, .navbar-brand {
+  background-color: black !important;
+  color: white !important;
+}
